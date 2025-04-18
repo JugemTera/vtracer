@@ -214,7 +214,7 @@ fn construct_config(
 
 /// A Python module implemented in Rust.
 #[pymodule]
-fn vtracer(_py: Python, m: &PyModule) -> PyResult<()> {
+fn myvtracer(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(convert_image_to_svg_py, m)?)?;
     m.add_function(wrap_pyfunction!(convert_raw_image_to_svg, m)?)?;
     m.add_function(wrap_pyfunction!(convert_pixels_to_svg, m)?)?;
